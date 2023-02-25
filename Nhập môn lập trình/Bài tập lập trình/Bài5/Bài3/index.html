@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số đảo ngược</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Số đảo ngược</h1>
+    <p>Nhập vào 1 số</p>
+    <input type="text" id="123"> <br>
+    <button onclick="M()">OK</button>
+    <script>
+        function M() { 
+            var x = 0 ;
+            var a = Number(document.getElementById("123").value)
+            while(a>0){
+                var c = a % 10 ;
+                x = x * 10 +c ;
+                a = Math.floor(a/10) ;
+            }
+            document.write("Số đảo ngược là: " +x )
+        }
+    </script>
+</body>
+</html>

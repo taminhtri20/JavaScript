@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=Number(prompt('Số cân'));
+        let b=Number(prompt('chiều cao'));
+        var c=a/(b*b);
+        function M (){
+            document.write("Chỉ số BMI" +c );
+        }
+        if (c<16){
+            alert('Gầy độ III')
+        }else if (c>=16 && c<17) {
+            alert('Gầy độ II')
+        }else if (c>=17 && c<18.5) {
+            alert('Gầy độ I')
+        }else if (c>=18.5 && c<25) {
+            alert('Bình thường')
+        }else if (c>=25 && c<30) {
+            alert('Béo phì độ I')
+        }else if (c>=30 && c<40) {
+            alert('Béo phì độ II')
+        }else {
+            alert('Béo phì độ III')
+        }
+    </script>
+</body>
+</html>

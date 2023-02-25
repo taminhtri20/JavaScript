@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 1481px;
+}
+.head{
+    height:138px;
+    background-color: rgb(118, 118, 118);
+    display:block;
+    width: 1481px;
+}
+.t-game{
+    margin-top: 8px;
+    margin-left: 30px;
+}
+.logo{
+    display: flex;
+}
+.logo-1{
+    display: inline-block;
+}
+.logo-2{
+    display: inline-block;
+    width: 280px;
+    height: 90px;
+    background-color: rgb(73, 73, 73);
+    margin-left: 900px;
+    border-color: black;
+    border: 1px  solid #fff;
+}
+.login-main{
+    margin-top: 5px;
+    color: #fff;
+    margin-left: 10px;
+}
+.login{
+    border-radius: 100px;
+}
+.login-1{
+    margin-top: 5px;
+    margin-left: 52px;
+}
+.login-2{
+    width: 40%;
+    border-radius: 100px;
+}
+.head-link{
+    width: 1300px;
+    height: 30px;
+    background-color: rgb(73, 73, 73);
+    margin-left: 80px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content:start;
+}
+li{
+    margin-left: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 4px;
+}
+.content{
+    height: 700px;
+    display: flex;
+}
+.content-left{
+    width: 900px;
+    margin-left:80px ;
+}
+h2{
+    margin-left: 300px;
+}
+.logo-game{
+    display: flex;
+    width: 900px;
+}
+.logo-anh{
+    width: 60%;
+    height: 60%;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.game{
+    border: 1px solid;
+    margin-left: 6px;
+    width: 220px;
+    height: 160px;
+}
+.game-1{
+    margin-top: 0;
+    margin-left: 10px;
+}
+.game-2{
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+.content-right{
+    width: 200px;
+    margin-left: 20px;
+}
+.right-1{
+    color: #fff;
+    background-color: rgb(73, 73, 73);
+    margin-top: 25px;
+    width: 380px;
+}
+.right-2{
+    display: flex;
+    width: 378px;
+    border: 1px solid;
+}
+.right-game{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 100px;
+}
+.icon-right{
+    display: flex;
+    margin-top: 5px;
+    width: 380px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.right-icon{
+    border: 1px solid;
+    width: 378px;
+    height: 270px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.p-main{
+    color: rgb(113, 113, 113);
+    font-size: 20px;
+}
+.p{
+    font-size: smaller;
+}

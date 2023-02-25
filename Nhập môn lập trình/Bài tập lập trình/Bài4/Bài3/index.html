@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Giá hoa quả</h2>
+    <input type="text" id="123">
+    <button onclick="gia()">Xem giá</button>
+    <p id="msg"></p>
+    <script>
+        function gia (){
+            var gia=(document.getElementById('123').value);
+            var result;
+            switch(gia){
+                case 'Ổi' :
+                case 'Dưa hấu' :
+                    result = 20000
+                break
+                case 'Táo' :
+                case 'Xoài' :
+                    result = 30000
+                break
+                case 'Cam' :
+                case 'Chôm chôm' :
+                    result = 40000
+                break
+                case 'Măng cụt'  :
+                    result = 50000
+                break
+            }
+            document.getElementById('msg').innerHTML=
+            (result + " VND/kg");
+        }
+    </script>
+</body>
+</html>

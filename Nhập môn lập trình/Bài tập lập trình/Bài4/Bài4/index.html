@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tính điểm đại học khối D</h2>
+    Môn Toán <input type="text" id="123"> <br> <br>
+    Môn Văn <input type="text" id="456"> <br> <br>
+    Môn Anh <input type="text" id="789"> <br> <br>
+    Khu vực <select id="abc">
+        <option value="KV1">KV1</option>
+        <option value="KV2-NT">KV2-NT</option>
+        <option value="KV2">KV2</option>
+        <option value="KV3">KV3</option>
+    </select> <br> <br>
+    <button onclick="diem()">Tính điểm</button>
+    <p id="msg"></p>
+    <script>
+        function diem(){
+        var a=Number(document.getElementById('123').value)
+        var b=Number(document.getElementById('456').value)
+        var c=Number(document.getElementById('789').value)
+        var d=a+b+c
+        var e=(document.getElementById('abc').value)
+        switch(e){
+            case 'KV1' :
+            e =Number('0.75')
+            break
+            case 'KV2-NT' :
+            e = 0.5
+            break
+            case 'KV2' :
+            e = 0.25
+            break
+            case 'KV3' :
+            e = 0
+            break
+        }
+        var z=d+e
+        document.getElementById('msg').innerHTML=
+     ("Tổng điểm đại học của bạn là:" + z);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let x = Number(prompt("Số phần tử trong mảng"));
+    var c = [];
+    for(i=0;i<x;i++){
+        let a = Number(prompt("nhap so"));
+        c.push(a);
+    }
+    if(c.length>5){
+    function tinhtong(c){
+    var sum = 0;
+    for ( var j = 0; j < c.length; j++){
+     sum = sum + c[j];
+     }
+    return sum;
+    }
+    document.write(tinhtong(c));
+    }else{  
+        alert("Thử lại")    
+    }
+   </script>
+</body>
+</html> 

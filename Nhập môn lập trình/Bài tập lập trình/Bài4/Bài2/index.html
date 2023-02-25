@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="123"/>
+        <button onclick="tinhsongay()">Tính số ngày</button>
+        <p id="msg"></p> 
+    <script>
+       function tinhsongay(){
+        var thang=Number(document.getElementById('123').value);
+        var result;
+       
+        switch(thang) {
+            case 1 :
+            case 3 :
+            case 5 :
+            case 7 :
+            case 8 :
+            case 10 :
+            case 12 :
+            result = 31
+            break
+            case 2 :
+            result = 28 , 29 
+            break   
+            case 4 :
+            case 6 :
+            case 9 :
+            case 11 :
+            result = 30
+            default:
+            result = 'không hợp lệ'
+            break
+        }
+    document.getElementById('msg').innerHTML=
+    ('Tháng '+ thang +' có ' + result + ' ngày') ;
+}
+    </script>
+</body>
+</html>
